@@ -1,0 +1,38 @@
+body {
+    background: rgb(116, 88, 88)
+}
+.caption {
+    width:99%;
+    bottom: 0.3rem;
+    position: absolute;
+    background: -webkit-linear-gradient(bottom, #000 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+        background: -moz-linear-gradient(bottom, #000 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+        background: -o-linear-gradient(bottom, #000 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+        background: linear-gradient(to top, #000 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+h1 {
+    color:rgb(116, 88, 88);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+h3, h4 {
+    color:rgb(163, 145, 145);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h3 {
+    margin-top: -0.1em;
+}
+#rps {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.footer {
+    border: 0.2em solid;
+    padding: 1em;
+    background-color: rgb(100,80,80);
+    font-size: 1.2em;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

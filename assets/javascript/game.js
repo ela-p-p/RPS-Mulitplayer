@@ -18,12 +18,12 @@ var config = {
     var player1 = " ";
     var player2 = " ";
     
-    // alert( "Click a pic Player 1")
+    alert( "Click a pic Player 1")
          
     $("img").on("click", function(event) {
         player1 = ($(this).attr("data-value"));
         $("img").off("click");
-        // alert("Click a pic Player 2");
+        alert("Click a pic Player 2");
         $("img").on("click", function(event) {
             player2 = ($(this).attr("data-value"));
             if ((player1 === "r") || (player1 === "p") || (player1 === "s")) {

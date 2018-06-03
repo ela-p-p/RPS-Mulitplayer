@@ -17,8 +17,8 @@
 <div class="container">
 
     <div class = "row">
-        <div class = "col-sm-1"></div>
-            <div class="col-sm-10 thumbnail">
+        <div class = "col-sm-2"></div>
+            <div class="col-sm-8 thumbnail">
                 <img class="img-responsive" src="assets/images/rps_pic.jpg"  alt = "background">
                     <div class="caption">
                 <h1>Rock Papper Scissors</h1>
@@ -33,13 +33,13 @@
                         Player 1 click a picture <br>then <br>
                 Player 2 click a picture</h4></div>
         <div class = "col-sm-2" id = "rock">
-            <img class="rounded thumbnail" src="assets/images/rock.jpg" alt="rock">
+            <img class="rounded thumbnail" src="assets/images/rock.jpg" alt="rock" data-value = "r">
                 </div>
                     <div class = "col-sm-2" id = "paper">
-                        <img class="rounded thumbnail" src="assets/images/paper.jpg" alt="paper">
+                        <img class="rounded thumbnail" src="assets/images/paper.jpg" alt="paper" data-value = "p">
                         </div>
                     <div class = "col-sm-2" id = "scissors">
-                <img class="rounded thumbnail" src="assets/images/scissors.jpg" alt="scissors">
+                <img class="rounded thumbnail" src="assets/images/scissors.jpg" alt="scissors" data-value = "s">
             </div>
             <div class = "col-sm-3">
             <h3> <strong>Scores</strong></h3>
@@ -49,29 +49,42 @@
         </div>
         </div>                                             
         
-         <div class="row">
-            <div class="col-lg-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Pick r, p or s</h3>
+        <div class="card" id = "chat_area" style="width: 35rem;">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Chat</strong></h5>
+                  </div>
+                <ul class="list-group list-group-flush" id = "chat_output">
+                 
+                </ul>
+                <div class="card-body">
+                        <label for = "message">Message:</label>
+                        <input class = "form-control" id = "chat_input"></input>
+                        <button class="btn btn-dark" id="submit_input" type="submit">Send</button>
+                </div>
+              </div>
+        
+         <!-- <div class="row">
+            <div class="col-lg-3" id = "chat_area">
+                <div class="card" >
+                    <div class="card-heading">
+                        <h3 class="card-title">Chat</h3>
                             </div>
-                                <div class="panel-body">
+                                <div class="card-body">
                                   <form>
-                                    <div class="form-group">
-                                      <label for="player_name1">Player 1:</label>
-                                      <input class="form-control" id="guess1_input" type="text">
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="player_name2">Player 2:</label>
-                                      <input class="form-control" id="guess2_input" type="text">
-                                    </div>
-                                    <button class="btn btn-primary" id="submit-guess" type="submit">Submit</button>
+                                        <div class="card">
+                                                <ul id="chat_output" row = "5"></ul>
+                                                      </div>
+                                               <div class = "form-group">
+                                          
+                                      </div>
+                                    
+                                    
                                   </form>
                                 </div>
                               </div>
                             </div>
                       
-                          </div>
+                          </div> -->
                           <footer class="footer fixed-bottom">
                                 <div class="container">
                                 <span class="text"> &copy; Copyright Elizabeth Porter</span>

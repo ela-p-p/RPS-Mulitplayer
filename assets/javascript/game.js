@@ -1,5 +1,3 @@
-
-
 $(document).ready(function( $ ) {
     
 var config = {
@@ -65,8 +63,7 @@ var config = {
              $("#wins_2").text(snapshot.val().wins_2);
              $("#ties").text(snapshot.val().ties); 
           
-             
-            
+                     
             // Handle the errors
          }, function(errorObject) {
              console.log("Errors handled: " + errorObject.code);
@@ -75,29 +72,24 @@ var config = {
     });
 
     //chat js
-var input = "";
+    var input = "";
     
     $("#submit_input").on("click", function(event) {
       event.preventDefault();
 
       input = $("#chat_input").val().trim();    
     
-    database.ref("/chat").push(input);
-    console.log(input);
-    $("#chat_input").val("");
-    });
+        database.ref("/chat").push(input);
+        console.log(input);
+        $("#chat_input").val("");
+        });
 
-    // Clear of the text-boxes
-  
-// Firebase watcher + initial loader HINT: .on("value")
-database.ref("/chat").on("child_added", function(snapshot) {
+    database.ref("/chat").on("child_added", function(snapshot) {
+        console.log(snapshot.val());
 
-  // Log everything that's coming out of snapshot
-  console.log(snapshot.val());
-//   console.log(snapshot.val().input);
-var output = snapshot.val()
-  $("#chat_output").append("<ol>"+ output);
-});  
+        var output = snapshot.val()
+            $("#chat_output").append("<ol>"+ output);
+    });  
     
 }); //document end
     

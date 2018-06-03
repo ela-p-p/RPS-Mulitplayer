@@ -15,7 +15,6 @@
 <body>
         
 <div class="container">
-
     <div class = "row">
         <div class = "col-sm-2"></div>
             <div class="col-sm-8 thumbnail">
@@ -29,75 +28,49 @@
         
     <div class="row" id = "rps">
         <div class = "col-sm-3"> 
-                    <h4> <strong>Rules: </strong><br><br>
-                        Player 1 click a picture <br>then <br>
-                Player 2 click a picture</h4></div>
-        <div class = "col-sm-2" id = "rock">
-            <img class="rounded thumbnail" src="assets/images/rock.jpg" alt="rock" data-value = "r">
-                </div>
-                    <div class = "col-sm-2" id = "paper">
-                        <img class="rounded thumbnail" src="assets/images/paper.jpg" alt="paper" data-value = "p">
-                        </div>
-                    <div class = "col-sm-2" id = "scissors">
-                <img class="rounded thumbnail" src="assets/images/scissors.jpg" alt="scissors" data-value = "s">
+            <h4> <strong>Rules: </strong><br><br>
+                Player 1 click a picture <br>then <br>
+                    Player 2 click a picture</h4></div>
+                        <div class = "col-sm-2" id = "rock">
+                            <img class="rounded thumbnail" src="assets/images/rock.jpg" alt="rock" data-value = "r">
+                                </div>
+                                    <div class = "col-sm-2" id = "paper">
+                                        <img class="rounded thumbnail" src="assets/images/paper.jpg" alt="paper" data-value = "p">
+                                            </div>
+                                            <div class = "col-sm-2" id = "scissors">
+                                        <img class="rounded thumbnail" src="assets/images/scissors.jpg" alt="scissors" data-value = "s">
+                                    </div>
+                                <div class = "col-sm-3">
+                            <h3> <strong>Scores</strong></h3>
+                        <h3>Player 1: <span id="wins_1"></span> <span id ="playerOne"></span><br>
+                    Player 2: <span id="wins_2"></span> <span id ="playerTwo"></span><br>
+                Ties: <span id="ties"></span></h3>
             </div>
-            <div class = "col-sm-3">
-            <h3> <strong>Scores</strong></h3>
-            <h3>Player 1: <span id="wins_1"></span> <span id ="playerOne"></span><br>
-            Player 2: <span id="wins_2"></span> <span id ="playerTwo"></span><br>
-            Ties: <span id="ties"></span></h3>
-        </div>
         </div>                                             
         
         <div class="card" id = "chat_area" style="width: 35rem;">
-                <div class="card-body">
-                  <h5 class="card-title"><strong>Chat</strong></h5>
-                  </div>
-                <ul class="list-group list-group-flush" id = "chat_output">
-                 
-                </ul>
-                <div class="card-body">
-                        <label for = "message">Message:</label>
-                        <input class = "form-control" id = "chat_input"></input>
-                        <button class="btn btn-dark" id="submit_input" type="submit">Send</button>
-                </div>
-              </div>
-        
-         <!-- <div class="row">
-            <div class="col-lg-3" id = "chat_area">
-                <div class="card" >
-                    <div class="card-heading">
-                        <h3 class="card-title">Chat</h3>
-                            </div>
+            <div class="card-body">
+                <h5 class="card-title"><strong>Chat</strong></h5>
+                    </div>
+                        <ul class="list-group list-group-flush" id = "chat_output">
+                            </ul>
                                 <div class="card-body">
-                                  <form>
-                                        <div class="card">
-                                                <ul id="chat_output" row = "5"></ul>
-                                                      </div>
-                                               <div class = "form-group">
-                                          
-                                      </div>
-                                    
-                                    
-                                  </form>
-                                </div>
-                              </div>
-                            </div>
-                      
-                          </div> -->
-                          <footer class="footer fixed-bottom">
-                                <div class="container">
-                                <span class="text"> &copy; Copyright Elizabeth Porter</span>
-                                    </div>
-                                </footer>
+                            <label for = "message">Message:</label>
+                        <input class = "form-control" id = "chat_input"></input>
+                    <button class="btn btn-dark" id="submit_input" type="submit">Send</button>
+                </div>
+            </div>
+        
+        <footer class="footer fixed-bottom">
+            <div class="container">
+                <span class="text"> &copy; Copyright Elizabeth Porter</span>
+            </div>
+        </footer>
 
 
 <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
 <script type="text/javascript" src="assets/javascript/game.js"></script> 
               
-
-  
-    
 </body>
 </html>
